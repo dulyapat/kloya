@@ -14,4 +14,5 @@
 * [การลงสินค้าประเภทต่างๆ](undefined-4.md)
 * [จัดส่งแบบลงทะเบียนกับEMS](ems.md)
 * [การเพิ่มผู้ใช้ และตั้งค่าบทบาทผู้ใช้](undefined-10.md)
+* [การย้าย Host WordPress \(manual\)](host-wordpress-manual.md)
 
