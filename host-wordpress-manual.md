@@ -1,12 +1,12 @@
 # การย้าย Host WordPress \(manual\)
 
-ในบางครั้งเราอาจต้องมีการย้ายโฮ้สต์ ไม่ว่าจะด้วยเหตุผลใด เช่น โฮ้สต์เก่ามีปัญหาล่มบ่อย ช้า หรือหมดช่วงเวลาโปรโมชั่นแล้ว หากใช้ต่ออาจเสียค่าใช้จ่ายแพง ก็อาจใช้วิธี[การ backup](https://www.wpthaiuser.com/%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%a2%e0%b9%89%e0%b8%b2%e0%b8%a2%e0%b9%82%e0%b8%ae%e0%b9%89%e0%b8%aa-site-backup/) แล้วก็ทำการย้ายไปยังที่ใหม่ที่เราได้ซื้อไว้
+ในบางครั้งเราอาจต้องมีการย้ายโฮ้สต์ ไม่ว่าจะด้วยเหตุผลใด เช่น โฮ้สต์เก่ามีปัญหาล่มบ่อย ช้า หรือหมดช่วงเวลาโปรโมชั่นแล้ว หากใช้ต่ออาจเสียค่าใช้จ่ายแพง ก็อาจใช้วิธี[การ backup](https://www.wpthaiuser.com/%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%a2%e0%b9%89%e0%b8%b2%e0%b8%a2%e0%b9%82%e0%b8%ae%e0%b9%89%e0%b8%aa-site-backup/)แล้วก็ทำการย้ายไปยังที่ใหม่ที่เราได้ซื้อไว้
 
 วิธีการที่จะแสดงให้ชมนี้เป็นวิธีการพื้นฐานที่ชัวร์ที่สุด ทำแรกๆ อาจจะงงๆ หน่อย แต่ถ้าคล่องแล้วก็จะไม่นานเลยค่ะ จะเสียเวลาเล็กน้อยตอนดาวน์โหลดและอัพโหลดไฟล์เว็บไซต์
 
 ### **ข้อมูลที่ต้องใช้ในการย้ายโฮ้ส** 
 
-เช่นเดียวกับ[การติดตั้ง WordPress](https://www.wpthaiuser.com/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%95%e0%b8%b4%e0%b8%94%e0%b8%95%e0%b8%b1%e0%b9%89%e0%b8%87-wordpress-manual/) ใหม่ เราต้องใช้ข้อมูล Username/Password \(1\), รายละเอียด Ftp เพื่อใช้ในการอัพโหลดไฟล์ \(2\) และ URL สำหรับเข้าใช้งาน DirectAdmin ของเรา \(3\)
+เช่นเดียวกับ[การติดตั้ง WordPress](https://www.wpthaiuser.com/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%95%e0%b8%b4%e0%b8%94%e0%b8%95%e0%b8%b1%e0%b9%89%e0%b8%87-wordpress-manual/)ใหม่ เราต้องใช้ข้อมูล Username/Password \(1\), รายละเอียด Ftp เพื่อใช้ในการอัพโหลดไฟล์ \(2\) และ URL สำหรับเข้าใช้งาน DirectAdmin ของเรา \(3\)
 
 ![host-detail](https://www.wpthaiuser.com/wp-content/uploads/2014/12/host-detail.png)
 
@@ -32,7 +32,7 @@
 
 ![](https://www.wpthaiuser.com/wp-content/uploads/2014/12/sql-management.png)
 
-คลิกที่ลิงค์ **phpMyAdmin** เพื่อเข้าสู่ฐานข้อมูล แล้วจะมีกล่องข้อความให้เรากรอก Username และ Password อีกที
+คลิกที่ลิงค์ **phpMyAdmin**เพื่อเข้าสู่ฐานข้อมูล แล้วจะมีกล่องข้อความให้เรากรอก Username และ Password อีกที
 
 ![](https://www.wpthaiuser.com/wp-content/uploads/2014/12/phpmyadmin.png)
 
@@ -40,13 +40,13 @@
 
 ![choose-database-first](https://www.wpthaiuser.com/wp-content/uploads/2014/12/choose-database-first.png)
 
-คลิกที่แท็บ **Export** \(ส่งออก\)
+คลิกที่แท็บ **Export**\(ส่งออก\)
 
 ![](https://www.wpthaiuser.com/wp-content/uploads/2014/12/export-database-wordpress.png)
 
-จากนั้นคลิกที่ **Export Method** : ให้เลือกเป็น **Custom** แล้วที่ตัวเลือก **Compression** ให้เลือกเป็นแบบ **gzipped** เพื่อเป็นการบีบอัดฐานข้อมูลที่เราจะ export เนื่องจากบางทีฐานข้อมูลอาจมีขนาดใหญ่เกินไปจนเราไม่สามารถที่จะ Import เข้าที่โฮ้สต์ใหม่ได้
+จากนั้นคลิกที่ **Export Method**: ให้เลือกเป็น **Custom**แล้วที่ตัวเลือก **Compression**ให้เลือกเป็นแบบ **gzipped**เพื่อเป็นการบีบอัดฐานข้อมูลที่เราจะ export เนื่องจากบางทีฐานข้อมูลอาจมีขนาดใหญ่เกินไปจนเราไม่สามารถที่จะ Import เข้าที่โฮ้สต์ใหม่ได้
 
-แล้วให้คลิกที่ปุ่ม **Go** ด้านล่างสุด เพื่อทำการเซฟไฟล์ database ที่เรา export ไว้
+แล้วให้คลิกที่ปุ่ม**Go**ด้านล่างสุด เพื่อทำการเซฟไฟล์ database ที่เรา export ไว้
 
 ![](https://www.wpthaiuser.com/wp-content/uploads/2014/12/export-custom-gzipped.png)
 
@@ -70,7 +70,7 @@
 
 ![](https://www.wpthaiuser.com/wp-content/uploads/2014/12/create-database.png)
 
-ตั้งชื่อ Database, User และ Password ใหม่ค่ะ โดยระบบอาจจะตั้งส่วนหน้ามาให้ แล้วเราก็เติมส่วนหลังเพิ่มเข้าไป อาจใช้ชื่อเหมืกนันก็ได้เพื่อให้ง่ายต่อการจดจำ เสร็จแล้วก็ตั้งรหัสผ่าน ในที่นี้เราให้ระบบทำการ random ค่ะ และคลิกที่ปุ่ม **Create** ค่ะ
+ตั้งชื่อ Database, User และ Password ใหม่ค่ะ โดยระบบอาจจะตั้งส่วนหน้ามาให้ แล้วเราก็เติมส่วนหลังเพิ่มเข้าไป อาจใช้ชื่อเหมืกนันก็ได้เพื่อให้ง่ายต่อการจดจำ เสร็จแล้วก็ตั้งรหัสผ่าน ในที่นี้เราให้ระบบทำการ random ค่ะ และคลิกที่ปุ่ม **Create**ค่ะ
 
 ![](https://www.wpthaiuser.com/wp-content/uploads/2014/12/make-datebase-user-1.png)
 
@@ -94,7 +94,7 @@
 
 ![](https://www.wpthaiuser.com/wp-content/uploads/2014/12/import-tab-1.png)
 
-เลือกไฟล์ที่ database เราได้ทำการ **Export** ไว้ในขั้นตอนแรกแล้วคลิกที่ปุ่ม **Go** แล้วก็รอจนอัพโหลดเสร็จ แล้วแต่ขนาดไฟล์
+เลือกไฟล์ที่ database เราได้ทำการ **Export**ไว้ในขั้นตอนแรกแล้วคลิกที่ปุ่ม**Go**แล้วก็รอจนอัพโหลดเสร็จ แล้วแต่ขนาดไฟล์
 
 ![](https://www.wpthaiuser.com/wp-content/uploads/2014/12/import-database-1.png)
 
@@ -104,7 +104,7 @@ Import เรียบร้อยแล้ว
 
 ### 6. อัพโหลดไฟล์ WordPress
 
-ใช้โปรแกรม [FileZilla Client Ftp](https://www.wpthaiuser.com/%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b9%83%e0%b8%8a%e0%b9%89%e0%b8%87%e0%b8%b2%e0%b8%99-filezilla/) เพื่ออัพโหลดไฟล์
+ใช้โปรแกรม [FileZilla Client Ftp](https://www.wpthaiuser.com/%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b9%83%e0%b8%8a%e0%b9%89%e0%b8%87%e0%b8%b2%e0%b8%99-filezilla/)เพื่ออัพโหลดไฟล์
 
 อัดโหลดไฟล์เว็บไปไว้ในแฟ้ม public\_html
 
@@ -131,4 +131,10 @@ Import เรียบร้อยแล้ว
 หากเราทำการเปลี่ยนทั้งโฮ้สต์และโดเมนด้วย ก็ให้เข้าไปที่ phpMyAdmin ตามวิธีด้านบน จากนั้นให้แก้ไขข้อมูล site-url ในแถว wp-option
 
 ![](https://www.wpthaiuser.com/wp-content/uploads/2014/12/site-url.png)
+
+**เครดิตของคุณ** [**Jatupon Rattanapanop**](https://www.wpthaiuser.com/author/emily100/)\*\*\*\*
+
+\*\*\*\*
+
+
 
