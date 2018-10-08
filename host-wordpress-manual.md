@@ -130,7 +130,3 @@
 
   ![](https://www.wpthaiuser.com/wp-content/uploads/2014/12/site-url.png)
 
-\*\*\*\*
-
-
-
