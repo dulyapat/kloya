@@ -20,4 +20,5 @@
 * [การตั้งค่าเบื้องต้น](undefined-12.md)
 * [การตั้งค่า Nameserver](nameserver.md)
 * [การตั้งค่า Permalinks](permalinks.md)
+* [Tags และ Categories](tags-categories.md)
 
