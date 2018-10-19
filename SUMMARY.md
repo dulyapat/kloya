@@ -18,4 +18,5 @@
 * [การสร้าง Menu](menu.md)
 * [การตั้งค่า Widget](widget.md)
 * [การตั้งค่าเบื้องต้น](undefined-12.md)
+* [การตั้งค่า Nameserver](nameserver.md)
 
