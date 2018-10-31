@@ -21,4 +21,5 @@
 * [การตั้งค่า Nameserver](nameserver.md)
 * [การตั้งค่า Permalinks](permalinks.md)
 * [Tags และ Categories](tags-categories.md)
+* [การใช้งาน YITH Catalog Mode](yith-catalog-mode.md)
 
